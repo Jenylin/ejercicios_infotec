@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores</title>
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Vectores</h1>
+        </header>
+        <div class="content">
+            <aside>
+                <ul>
+                    <li><a href="tabla.html">Tablas de multiplicar</a></li><br>
+                    <li><a href="fecha.html">Fecha</a></li><br>
+                    <li><a href="vectores.html">Vectores</a></li><br>
+                </ul>
+            </aside>
+            <section class="central">
+    
+                <form>
+                        <fieldset>
+                            <legend>Vectores</legend>
+                            Ingresa los elementos que deseas ordenar, separados por comas: <br>
+                             <input type="text" id="elementos" size="50"/><br><br>
+                             <h2>Ordenar</h2>
+                                 <select id="ordenTipo" >
+                                    <option value="1" onchange="ordenar('sorted')"> De menor a mayor </option>
+                                    <option value="2" onchange="ordenarDos('sorted')"> De mayor a menor </option>
+                                </select><br>
+                                <div id="sorted"></div><br>
+                                <button type="button" class="miBoton" onclick="ejecutar()">Ordenar</button>
+                                <button type="button" class="miBoton" onclick="borrar()">Borrar</button><br><br><br><br>
+                            <h2>Filtrar</h2>
+                                <button type="button" class="miBoton2" onclick="pares()">Obtener pares:</button>
+                                <div id="pares"></div><br><br><br>
+                                <button type="button" class="miBoton2" onclick="impares()">Obtener impares:</button>
+                                <div id="impares"></div><br><br><br>
+                                <button type="button" class="miBoton2" onclick="mTres()">Obtener múltiplos de tres:</button>
+                                <div id="mTres"></div><br><br><br>
+                                <button type="button" class="miBoton2" onclick="ejecutarFibo()">Obtener números que pertenezcan a la sucesión de Fibonacci:</button>
+                                <div id="fibo"></div><br>                                
+                        </fieldset>
+                        <h2>Aleatorio</h2>
+                            Obtendrás un número aleatorio entre 1 y el número ingresado. <br>
+                            Ingresa un número: <input type="text" id="int" size="5"><br>
+                            <div id="ale"></div><br>
+                            <button type="button" class="miBoton3" onclick="dibujarAleatorio()">Obtener aleatorio</button>
+                            <button type="button" class="miBoton3" onclick="borrarDos()">Borrar</button>
+                </form>
+    
+                <script src="../js/vectores.js"></script>
+            </section>
+                
+            <section class="lateralDer"></section>
+        </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tabla de multiplicar</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas de multiplicar</h1>
+    </header>
+    <div class="content">
+        <aside>
+            <ul>
+                <li><a href="tabla.html">Tablas de multiplicar</a></li><br>
+                <li><a href="fecha.html">Fecha</a></li>
+            </ul>
+        </aside>
+        <section class="central">
+
+            <form>
+                    <fieldset>
+                        <legend>Tabla de multiplicar</legend>
+                        Ingresa el número del que quieras conocer su tabla de multiplicar: <input type="text" id="numero" size="5" /><br><br>
+                    </fieldset>
+            </form>
+
+            <button type="button" id="miBotoncito" onclick="multiplicar(num)">Obtener tabla</button>
+            <button type="button" id="miBotoncito2" onclick="borrar()">Borrar</button>
+            <div id="multTable"></div>
+            <script src="../js/tabla.js"></script>
+        </section>
+            
+        <section class="lateralDer"></section>
+    </div>
+</body>
+
+</html>
