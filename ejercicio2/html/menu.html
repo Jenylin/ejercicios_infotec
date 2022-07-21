@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fecha</title>
+    <title>Menú</title>
 </head>
 <body>
     <header>
-        <h1>Fecha</h1>
+        <h1>Menú</h1>
     </header>
     <div class="content">
         <aside>
@@ -26,20 +26,24 @@
             </ul>
         </aside>
         <section class="central">
-
+            <p>En esta página podrás generar un menú de páginas web, indicando su nombre y su vínculo.</p>
             <form>
-                    <fieldset>
-                        <legend>Fecha</legend>
-                        Ingresa el día: <input type="text" id="dia" size="5" /><br><br>
-                        Ingresa el mes: <input type="text" id="mes" size="5" /><br><br>
-                        Ingresa el año: <input type="text" id="anho" size="5" onchange="fecha(day, month, year)"/><br><br>
+                    <fieldset id="fieldset1">
+                        <legend>Genera tu menú</legend>
+                        Ingresa el nombre de tu menú de páginas web.<br>
+                        <input type="text" id="menuName" size="50" value="Nombre del menú"/><br><br>
+                        Ingresa un nombre para la página web.
+                        <input type="text" id="webPageName" size="50" placeholder="Nombre de la página"/><br><br>
+                        Ingresa el url de la página web.
+                        <input type="text" id="webPageUrl" size="50" placeholder="Url"/><br><br>
                     </fieldset>
+                    <button type="button" class="miBoton2" onclick="addNewPage()">Agregar otra página</button>
+                    <button type="button" class="miBoton2" onclick="generateMenu()">Generar menú</button>
+                    <button type="button" class="miBoton2" onclick="clear()">Limpiar</button>
             </form>
-
-            <button type="button" id="miBoton" onclick="fecha(day,month,year)">Calcular fecha</button>
-            <button type="button" id="miBoton2" onclick="borrar()">Borrar</button>
-            <div id="fechaResultante"></div>
-            <script src="../js/fecha.js"></script>
+            <br>
+            <div id="generatedMenu"></div>
+            <script src="../js/menu.js"></script>
         </section>
             
         <section class="lateralDer"></section>
